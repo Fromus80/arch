@@ -1,7 +1,6 @@
 loadkeys ru
 setfont cyr-sun16
-echo 'Скрипт сделан на основе чеклиста Бойко Алексея по Установке ArchLinux'
-echo 'Ссылка на чек лист есть в группе vk.com/arch4u'
+
 
 pacman-key --refresh-keys
 
@@ -28,9 +27,8 @@ mount /dev/sdd1 /mnt/boot/efi
 mount /dev/sdd3 /mnt/home
 
 echo '3.1 Выбор зеркал для загрузки.'
-rm -rf /etc/pacman.d/mirrorlist
-wget https://git.io/mirrorlist
-mv -f ~/mirrorlist /etc/pacman.d/mirrorlist
+nano /etc/pacman.d/mirrorlist
+
 
 echo '3.2 Установка основных пакетов'
 pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd netctl
