@@ -4,7 +4,6 @@
 loadkeys ru
 setfont cyr-sun16
 
-sleep 10
 pacman-key --refresh-keys 
 echo '2.3 Синхронизация системных часов'
 timedatectl set-ntp true
