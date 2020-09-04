@@ -26,7 +26,7 @@ sleep 10
 echo '3.5 Устанавливаем загрузчик'
 sleep 10
 pacman -Syy
-pacman -S grub efibootmgr os-prober mtools fuse --noconfirm 
+pacman -S grub efibootmgr os-prober mtools fuse
 grub-install /dev/sdd
 
 sleep 10
@@ -71,77 +71,78 @@ pacman -S plasma
 sleep 10
 echo 'Cтавим DM'
 sleep 10
-pacman -S sddm sddm-kcm --noconfirm
+pacman -S sddm sddm-kcm
 systemctl enable sddm
 sleep 10
 echo 'Ставим шрифты'
 sleep 10
-pacman -S ttf-arphic-ukai git ttf-liberation ttf-dejavu ttf-arphic-uming ttf-fireflysung ttf-sazanami --noconfirm
+pacman -S ttf-arphic-ukai git ttf-liberation ttf-dejavu ttf-arphic-uming ttf-fireflysung ttf-sazanami
 sleep 10
 echo 'Ставим звук'
 sleep 10
-pacman -S alsa-utils pulseaudio-equalizer-ladspa   --noconfirm
+pacman -S alsa-utils pulseaudio-equalizer-ladspa
 sleep 10
 echo 'Ставим Видео драйвер'
 sleep 10
-pacman -S nvidia  nvidia-utils  lib32-nvidia-utils --noconfirm
+pacman -S nvidia  nvidia-utils  lib32-nvidia-utils
 sleep 10
 echo ' Ставим  поддержку ntfs и fat'
 sleep 10
-pacman -S exfat-utils ntfs-3g   --noconfirm
+pacman -S exfat-utils ntfs-3g
 sleep 10
 echo ' Ставим рограммы для работы с архивами'
 sleep 10
-pacman -S file-roller p7zip unace lrzip unzip unrar  lha ark --noconfirm
+pacman -S file-roller p7zip unace lrzip unzip unrar lha ark
 sleep 10
 echo ' Ставим подключение Android к ПК через USB? '
 sleep 10
-pacman -S gvfs-mtp --noconfirm
+pacman -S gvfs-mtp
 sleep 10
 echo ' htop--диспетчер задач для linux  '
 sleep 10
-pacman -S htop xterm --noconfirm
+pacman -S htop xterm
 sleep 10
 echo ' gwenview - программа для просмотра изображений и PDF'
 sleep 10
-pacman -S gwenview okular --noconfirm
+pacman -S gwenview okular
 sleep 10
 echo ' Ставим Steam   '
-pacman -S steam --noconfirm
+pacman -S steam
 sleep 10
 echo 'Ставим neofetch screenfetch'
 sleep 10
-pacman -S screenfetch neofetch --noconfirm
+pacman -S screenfetch neofetch
 sleep 10
 echo 'Ставим VLC'
 sleep 10
-pacman -S vlc  --noconfirm
+pacman -S vlc
 sleep 10
 echo 'Ставим gparted - программу для работы с разделами sdd/hdd'
 sleep 10
-pacman -S gparted  --noconfirm
+pacman -S gparted
 sleep 10
 echo 'Ставим telegram - мессенджер'
 sleep 10
-pacman -S telegram-desktop   --noconfirm
+pacman -S telegram-desktop
 sleep 10
 echo 'Ставим программы для создания скриншотов'
 sleep 10
-pacman -S spectacle flameshot --noconfirm
+pacman -S spectacle flameshot
 sleep 10
 echo 'Создаем директории'
 sleep 10
-pacman -S xdg-user-dirs --noconfirm
+pacman -S xdg-user-dirs
 sleep 10
 xdg-user-dirs-update
 sleep 10
 echo 'Ставим Conky'
 sleep 10
-pacman -S conky conky-manager reflector --noconfirm
+pacman -S conky conky-manager reflector
 sleep 10
 echo 'Ставим сеть'
 sleep 10
-pacman -S networkmanager network-manager-applet ppp --noconfirm
+pacman -S networkmanager network-manager-applet ppp
+
 sleep 10
 echo 'Подключаем автозагрузку менеджера входа и интернет'
 sleep 10
