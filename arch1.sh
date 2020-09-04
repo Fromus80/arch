@@ -4,11 +4,14 @@
 loadkeys ru
 setfont cyr-sun16
 
+sleep 10
+pacman-key --refresh-keys 
 echo '2.3 Синхронизация системных часов'
 timedatectl set-ntp true
 
 sleep 10
-
+echo "Добро пожаловать в установку ArchLinux"
+sleep 10
 echo 'Ваша разметка диска'
 fdisk -l
 sleep 10
@@ -34,7 +37,7 @@ echo '3.1 Выбор зеркал для загрузки.'
 nano /etc/pacman.d/mirrorlist
 sleep 10
 echo '3.2 Установка основных пакетов'
-pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd netctl
+pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd netctl wget
 
 echo '3.3 Настройка системы'
 genfstab -pU /mnt >> /mnt/etc/fstab
