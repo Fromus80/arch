@@ -1,5 +1,31 @@
 #!/bin/bash
 
+loadkeys ru
+setfont cyr-sun16
+sleep 10
+echo '2.3 Синхронизация системных часов'
+sleep 10
+timedatectl set-ntp true
+sleep 10
+
+echo 'Ваша разметка диска'
+sleep 10
+fdisk -l
+sleep 10
+echo '2.4.2 Форматирование дисков'
+sleep 10
+mkfs.fat -F32 /dev/sda1
+mkfs.ext4  /dev/sda2
+mkfs.ext4  /dev/sda3
+
+echo '2.4.3 Монтирование дисков'
+mount /dev/sda2 /mnt
+mkdir /mnt/{home,boot}
+mkdir -p /mnt/boot/efi
+mount /dev/sda1 /mnt/boot/efi
+mount /dev/sda3 /mnt/home
+
+
 echo '3.2 Установка основных пакетов'
 sleep 10
 pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd netctl wget
