@@ -16,19 +16,27 @@ fdisk -l
 sleep 10
 
 cfdisk /dev/sdd
-
+sleep 10
 echo '2.4.2 Форматирование дисков'
-
+sleep 10
 mkfs.fat -F32 /dev/sdd1
+sleep 10
 mkfs.ext4  /dev/sdd2
+sleep 10
 mkfs.ext4  /dev/sdd3
 sleep 10
 echo '2.4.3 Монтирование дисков'
 sleep 10
 mount /dev/sdd2 /mnt
-mkdir /mnt/home
+sleep 10
 mkdir -p /mnt/boot/efi
+sleep 10
 mount /dev/sdd1 /mnt/boot/efi
+sleep 10
+mkdir /mnt/home
+sleep 10
+fdisk -l
+sleep 10
 mount /dev/sdd3 /mnt/home
 
 sleep 10
