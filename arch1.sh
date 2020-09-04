@@ -3,7 +3,7 @@
 
 loadkeys ru
 setfont cyr-sun16
-
+pacman -Sy
 pacman-key --refresh-keys 
 echo '2.3 Синхронизация системных часов'
 timedatectl set-ntp true
@@ -15,20 +15,20 @@ echo 'Ваша разметка диска'
 fdisk -l
 sleep 10
 
-cfdisk /dev/sde
+cfdisk /dev/sdd
 
 echo '2.4.2 Форматирование дисков'
 
-mkfs.fat -F32 /dev/sde1
-mkfs.ext4  /dev/sde2
-mkfs.ext4  /dev/sde3
+mkfs.fat -F32 /dev/sdd1
+mkfs.ext4  /dev/sdd2
+mkfs.ext4  /dev/sdd3
 
 echo '2.4.3 Монтирование дисков'
-mount /dev/sde2 /mnt
+mount /dev/sdd2 /mnt
 mkdir /mnt/home
 mkdir -p /mnt/boot/efi
-mount /dev/sde1 /mnt/boot/efi
-mount /dev/sde3 /mnt/home
+mount /dev/sdd1 /mnt/boot/efi
+mount /dev/sdd3 /mnt/home
 
 sleep 10
 
