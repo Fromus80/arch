@@ -22,16 +22,18 @@ echo 'FONT=cyr-sun16' >> /etc/vconsole.conf
 
 echo 'Создадим загрузочный RAM диск'
 mkinitcpio -p linux
-
+sleep 10
 echo '3.5 Устанавливаем загрузчик'
+sleep 10
 pacman -Syy
-pacman -S grub efibootmgr --noconfirm 
+pacman -S grub efibootmgr os-prober mtools fuse --noconfirm 
 grub-install /dev/sdd
 
-pacman -S os-prober mtools fuse --noconfirm
+sleep 10
 echo 'Обновляем grub.cfg'
+sleep 10
 grub-mkconfig -o /boot/grub/grub.cfg 
-
+sleep 10
 echo 'Добавляем пользователя'
 useradd -m -g users -G wheel -s /bin/bash $username
 
@@ -64,68 +66,89 @@ echo 'Ставим иксы и драйвера'
 pacman -S $gui_install
 sleep 10
 echo "Ставим PLASMA KDE"
+sleep 10
 pacman -S plasma 
 sleep 10
 echo 'Cтавим DM'
+sleep 10
 pacman -S sddm sddm-kcm --noconfirm
 systemctl enable sddm
 sleep 10
 echo 'Ставим шрифты'
-pacman -S ttf-arphic-ukai git ttf-liberation ttf-dejavu ttf-arphic-uming ttf-fireflysung ttf-sazanami--noconfirm
+sleep 10
+pacman -S ttf-arphic-ukai git ttf-liberation ttf-dejavu ttf-arphic-uming ttf-fireflysung ttf-sazanami --noconfirm
 sleep 10
 echo 'Ставим звук'
+sleep 10
 pacman -S alsa-utils pulseaudio-equalizer-ladspa   --noconfirm
 sleep 10
 echo 'Ставим Видео драйвер'
 sleep 10
 pacman -S nvidia  nvidia-utils  lib32-nvidia-utils --noconfirm
+sleep 10
 echo ' Ставим  поддержку ntfs и fat'
+sleep 10
 pacman -S exfat-utils ntfs-3g   --noconfirm
 sleep 10
 echo ' Ставим рограммы для работы с архивами'
+sleep 10
 pacman -S file-roller p7zip unace lrzip unzip unrar  lha ark --noconfirm
 sleep 10
 echo ' Ставим подключение Android к ПК через USB? '
+sleep 10
 pacman -S gvfs-mtp --noconfirm
 sleep 10
 echo ' htop--диспетчер задач для linux  '
+sleep 10
 pacman -S htop xterm --noconfirm
 sleep 10
-echo ' gwenview - программа для просмотра изображений'
-pacman -S gwenview --noconfirm
+echo ' gwenview - программа для просмотра изображений и PDF'
+sleep 10
+pacman -S gwenview okular --noconfirm
 sleep 10
 echo ' Ставим Steam   '
 pacman -S steam --noconfirm
 sleep 10
 echo 'Ставим neofetch screenfetch'
+sleep 10
 pacman -S screenfetch neofetch --noconfirm
 sleep 10
 echo 'Ставим VLC'
+sleep 10
 pacman -S vlc  --noconfirm
 sleep 10
 echo 'Ставим gparted - программу для работы с разделами sdd/hdd'
+sleep 10
 pacman -S gparted  --noconfirm
 sleep 10
 echo 'Ставим telegram - мессенджер'
+sleep 10
 pacman -S telegram-desktop   --noconfirm
 sleep 10
 echo 'Ставим программы для создания скриншотов'
+sleep 10
 pacman -S spectacle flameshot --noconfirm
 sleep 10
 echo 'Создаем директории'
+sleep 10
 pacman -S xdg-user-dirs --noconfirm
+sleep 10
 xdg-user-dirs-update
 sleep 10
 echo 'Ставим Conky'
+sleep 10
 pacman -S conky conky-manager reflector --noconfirm
 sleep 10
 echo 'Ставим сеть'
+sleep 10
 pacman -S networkmanager network-manager-applet ppp --noconfirm
 sleep 10
 echo 'Подключаем автозагрузку менеджера входа и интернет'
+sleep 10
 systemctl enable NetworkManager
 sleep 10
 echo 'Установка завершена! Перезагрузите систему.'
+sleep 10
 echo 'Если хотите подключить AUR, установить мои конфиги XFCE, тогда после перезагрзки и входа в систему, установите wget (sudo pacman -S wget) и выполните команду:'
 echo 'wget git.io/archuefi3.sh && sh archuefi3.sh'
 exit
