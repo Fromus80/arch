@@ -74,6 +74,10 @@ sleep 10
 pacman -S sddm sddm-kcm
 systemctl enable sddm
 sleep 10
+echo ' Ставим Konsole dolphin'
+sleep 10
+pacman -S konsole dolphin
+sleep 10
 echo 'Ставим шрифты'
 sleep 10
 pacman -S ttf-arphic-ukai git ttf-liberation ttf-dejavu ttf-arphic-uming ttf-fireflysung ttf-sazanami
@@ -104,7 +108,7 @@ pacman -S htop xterm
 sleep 10
 echo ' gwenview - программа для просмотра изображений и PDF'
 sleep 10
-pacman -S gwenview okular
+pacman -S gwenview okular kcal
 sleep 10
 echo ' Ставим Steam   '
 pacman -S steam
@@ -133,15 +137,14 @@ echo 'Создаем директории'
 sleep 10
 pacman -S xdg-user-dirs
 sleep 10
-xdg-user-dirs-update
-sleep 10
+
 echo 'Ставим Conky'
 sleep 10
 pacman -S conky conky-manager reflector
 sleep 10
 echo 'Ставим сеть'
 sleep 10
-pacman -S networkmanager network-manager-applet ppp
+pacman -S networkmanager network-manager-applet ppp wget qbittorrent
 
 sleep 10
 echo 'Подключаем автозагрузку менеджера входа и интернет'
