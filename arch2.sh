@@ -54,16 +54,9 @@ pacman -Syy
 sleep 10
 pacman -Syu
 sleep 10
-echo "Куда устанавливем Arch Linux на виртуальную машину?"
-read -p "1 - Да, 0 - Нет: " vm_setting
-if [[ $vm_setting == 0 ]]; then
-  gui_install="xorg-server xorg-drivers xorg-xinit amd-ucode"
-elif [[ $vm_setting == 1 ]]; then
-  gui_install="xorg-server xorg-drivers xorg-xinit virtualbox-guest-utils"
-fi
 sleep 10
 echo 'Ставим иксы и драйвера'
-pacman -S $gui_install
+pacman -S xorg-server xorg-drivers xorg-xinit amd-ucode
 sleep 10
 echo "Ставим PLASMA KDE"
 sleep 10
@@ -137,7 +130,7 @@ echo 'Создаем директории'
 sleep 10
 pacman -S xdg-user-dirs
 sleep 10
-pacman -R discover --noconwirm
+pacman -Rs discover 
 echo 'Ставим Conky'
 sleep 10
 pacman -S conky conky-manager reflector
