@@ -26,7 +26,7 @@ sleep 10
 echo '3.5 Устанавливаем загрузчик'
 sleep 10
 pacman -Syy
-pacman -S grub efibootmgr os-prober mtools fuse
+pacman -S grub efibootmgr os-prober mtools fuse grub-customizer
 grub-install /dev/sdd
 
 sleep 10
