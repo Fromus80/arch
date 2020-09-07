@@ -14,9 +14,9 @@ fdisk -l
 sleep 10
 echo '2.4.2 Форматирование дисков'
 sleep 10
-mkfs.fat -F32 /dev/sda1
-mkfs.ext4  /dev/sda2
-mkfs.ext4  /dev/sda3
+mkfs.fat -F32 /dev/sdd1
+mkfs.ext4  /dev/sdd2
+mkfs.ext4  /dev/sdd3
 
 echo '2.4.3 Монтирование дисков'
 mount /dev/sdd2 /mnt
