@@ -19,11 +19,11 @@ mkfs.ext4  /dev/sda2
 mkfs.ext4  /dev/sda3
 
 echo '2.4.3 Монтирование дисков'
-mount /dev/sda2 /mnt
+mount /dev/sdd2 /mnt
 mkdir /mnt/{home,boot}
 mkdir -p /mnt/boot/efi
-mount /dev/sda1 /mnt/boot/efi
-mount /dev/sda3 /mnt/home
+mount /dev/sdd1 /mnt/boot/efi
+mount /dev/sdd3 /mnt/home
 
 
 echo '3.2 Установка основных пакетов'
