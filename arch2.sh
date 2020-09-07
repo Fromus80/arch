@@ -137,7 +137,7 @@ echo 'Создаем директории'
 sleep 10
 pacman -S xdg-user-dirs
 sleep 10
-
+pacman -R discover --noconwirm
 echo 'Ставим Conky'
 sleep 10
 pacman -S conky conky-manager reflector
@@ -155,5 +155,7 @@ echo 'Установка завершена! Перезагрузите сист
 sleep 10
 echo 'Если хотите подключить AUR, установить мои конфиги XFCE, тогда после перезагрзки и входа в систему, установите wget (sudo pacman -S wget) и выполните команду:'
 echo 'wget git.io/archuefi3.sh && sh archuefi3.sh'
+sleep 10
+reboot
 exit
 
