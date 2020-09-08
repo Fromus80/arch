@@ -133,9 +133,9 @@ pacman -S spectacle flameshot
 sleep 10
 
  
-echo 'Ставим Conky и reflector'
+echo 'Ставим reflector'
 sleep 10
-pacman -S conky conky-manager reflector
+pacman -S reflector
 sleep 10
 echo 'Ставим сеть и торрент'
 sleep 10
