@@ -60,16 +60,21 @@ pacman -S xorg-server xorg-drivers xorg-xinit amd-ucode
 sleep 10
 echo "Ставим PLASMA KDE"
 sleep 10
-pacman -S plasma 
+pacman -S plasma
+sleep 10
+pacman -Rs bluedevil discover
 sleep 10
 echo 'Cтавим DM'
 sleep 10
 pacman -S sddm sddm-kcm
 systemctl enable sddm
+echo 'Создаем директории'
 sleep 10
-echo ' Ставим Konsole dolphin'
+pacman -S xdg-user-dirs
 sleep 10
-pacman -S konsole dolphin
+echo ' Ставим Konsole dolphin gpm'
+sleep 10
+pacman -S konsole dolphin gpm
 sleep 10
 echo 'Ставим шрифты'
 sleep 10
@@ -99,9 +104,9 @@ echo ' htop--диспетчер задач для linux  '
 sleep 10
 pacman -S htop xterm
 sleep 10
-echo ' gwenview - программа для просмотра изображений и PDF'
+echo ' gwenview - программа для просмотра изображений и PDF, калькулятор'
 sleep 10
-pacman -S gwenview okular kcal
+pacman -S gwenview okular kcalc
 sleep 10
 echo ' Ставим Steam   '
 pacman -S steam
@@ -126,29 +131,23 @@ echo 'Ставим программы для создания скриншото
 sleep 10
 pacman -S spectacle flameshot
 sleep 10
-echo 'Создаем директории'
-sleep 10
-pacman -S xdg-user-dirs
-sleep 10
-pacman -Rs discover 
-echo 'Ставим Conky'
+
+ 
+echo 'Ставим Conky и reflector'
 sleep 10
 pacman -S conky conky-manager reflector
 sleep 10
-echo 'Ставим сеть'
+echo 'Ставим сеть и торрент'
 sleep 10
 pacman -S networkmanager network-manager-applet ppp wget qbittorrent
 
 sleep 10
 echo 'Подключаем автозагрузку менеджера входа и интернет'
 sleep 10
-systemctl enable NetworkManager
+systemctl enable NetworkManager gpm
 sleep 10
 echo 'Установка завершена! Перезагрузите систему.'
-sleep 10
-echo 'Если хотите подключить AUR, установить мои конфиги XFCE, тогда после перезагрзки и входа в систему, установите wget (sudo pacman -S wget) и выполните команду:'
-echo 'wget git.io/archuefi3.sh && sh archuefi3.sh'
-sleep 10
-reboot
+
+
 exit
 
