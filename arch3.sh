@@ -1,3 +1,4 @@
+#!/bin/bash
 sleep 10
 pacman -S exfat-utils ntfs-3g
 sleep 10
