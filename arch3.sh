@@ -40,7 +40,7 @@ sudo pacman -S gparted --noconfirm
 sleep 10
 echo 'Ставим telegram - мессенджер'
 sleep 10
-sudo pacman -S telegram-desktop --noconfirm
+sudo pacman -S telegram-desktop oxygen-icons --noconfirm
 sleep 10
 echo 'Ставим программы для создания скриншотов'
 sleep 10
@@ -49,8 +49,8 @@ sleep 10
  echo 'Ставим лого ArchLinux в меню'
   wget git.io/arch_logo.png
   sudo mv -f ~/arch_logo.png /usr/share/pixmaps/arch_logo.png
- 
-echo 'Ставим reflector'
+yay -S woeusb alsi inxi --noconfirm
+ echo 'Ставим reflector'
 sleep 10
 sudo pacman -S reflector --noconfirm
 
