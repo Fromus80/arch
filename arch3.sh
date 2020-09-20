@@ -3,7 +3,7 @@
 sudo pacman -Syu
 sudo pacman -S wget --noconfirm
 wget git.io/yay-install.sh && sh yay-install.sh --noconfirm
-yay -S hunspell-ru xorg-xkill ttf-symbola ttf-clear-sans yay -S x-arc-shadow papirus-maia-icon-theme-git breeze-default-cursor-theme x-arc-shadow papirus-maia-icon-theme-git breeze-default-cursor-theme --noconfirm
+yay -S hunspell-ru xorg-xkill ttf-symbola ttf-clear-sans yay -S x-arc-shadow papirus-maia-icon-theme-git breeze-default-cursor-theme x-arc-shadow papirus-maia-icon-theme-git breeze-default-cursor-theme google-chrome --noconfirm
 sleep 10
 sudo pacman -S exfat-utils ntfs-3g capitaine-cursors --noconfirm
 sleep 10
