@@ -3,8 +3,7 @@
 sudo pacman -Syu
 sudo pacman -S wget --noconfirm
 wget git.io/yay-install.sh && sh yay-install.sh --noconfirm
-yay -S hunspell-ru xorg-xkill ttf-symbola ttf-clear-sans yay -S x-arc-shadow papirus-maia-icon-theme-git breeze-default-cursor-theme x-arc-shadow papirus-maia-icon-theme-git breeze-default-cursor-theme google-chrome --noconfirm
-sleep 10
+
 sudo pacman -S exfat-utils ntfs-3g capitaine-cursors --noconfirm
 sleep 10
 echo ' Ставим рограммы для работы с архивами'
@@ -53,7 +52,8 @@ yay -S woeusb alsi inxi --noconfirm
  echo 'Ставим reflector'
 sleep 10
 sudo pacman -S reflector --noconfirm
-
+yay -S hunspell-ru xorg-xkill ttf-symbola ttf-clear-sans yay -S x-arc-shadow papirus-maia-icon-theme-git breeze-default-cursor-theme x-arc-shadow papirus-maia-icon-theme-git breeze-default-cursor-theme google-chrome --noconfirm
+sleep 10
 sleep 10
 echo 'Ставим zsh'
 
