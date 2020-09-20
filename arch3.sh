@@ -52,7 +52,17 @@ yay -S woeusb alsi inxi --noconfirm
  echo 'Ставим reflector'
 sleep 10
 sudo pacman -S reflector --noconfirm
-yay -S hunspell-ru xorg-xkill ttf-symbola ttf-clear-sans yay -S x-arc-shadow papirus-maia-icon-theme-git breeze-default-cursor-theme x-arc-shadow papirus-maia-icon-theme-git breeze-default-cursor-theme google-chrome --noconfirm
+yay -S hunspell-ru --noconfirm
+yay -S xorg-xkill --noconfirm
+yay -S ttf-symbola --noconfirm
+yay -S ttf-clear-sans --noconfirm
+yay -S x-arc-shadow --noconfirm
+yay -S papirus-maia-icon-theme-git --noconfirm
+yay -S breeze-default-cursor-theme --noconfirm
+yay -S x-arc-shadow --noconfirm
+yay -S papirus-maia-icon-theme-git --noconfirm
+yay -S breeze-default-cursor-theme --noconfirm
+yay -S google-chrome --noconfirm
 sleep 10
 sleep 10
 echo 'Ставим zsh'
