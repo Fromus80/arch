@@ -72,7 +72,7 @@ pacman -S xdg-user-dirs --noconfirm
 
 echo ' Ставим Konsole dolphin gpm'
 
-pacman -S konsole dolphin gpm kate --noconfirm
+pacman -S terminator dolphin gpm kate --noconfirm
 
 echo 'Ставим шрифты'
 
