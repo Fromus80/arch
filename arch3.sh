@@ -16,7 +16,7 @@ sudo pacman -S gvfs-mtp --noconfirm
 sleep 10
 echo ' htop--диспетчер задач для linux  '
 sleep 10
-sudo pacman -S htop xterm --noconfirm
+sudo pacman -S htop --noconfirm
 sleep 10
 echo ' gwenview - программа для просмотра изображений и PDF, калькулятор'
 sleep 10
@@ -60,20 +60,6 @@ yay -S x-arc-shadow --noconfirm
 yay -S papirus-maia-icon-theme-git --noconfirm
 yay -S breeze-default-cursor-theme --noconfirm
 yay -S google-chrome --noconfirm
-sleep 10
-sleep 10
-echo 'Ставим zsh'
-
-sudo pacman -S zsh --noconfirm
-
-chsh -s /bin/zsh
-
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-yay -S ttf-meslo-nerd-font-powerlevel10k --noconfirm
-yay -S nerd-fonts-meslo --noconfirm
-yay -S ttf-meslo --noconfirm
-echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+yay -S conky-manager2-git --noconfirm
 
 exit
