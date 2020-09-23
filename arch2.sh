@@ -64,15 +64,15 @@ pacman -Rs bluedevil discover --noconfirm
 
 echo 'Cтавим DM'
 
-pacman -S sddm sddm-kcm --noconfirm
+pacman -S sddm sddm-kcm grub-customizer --noconfirm
 systemctl enable sddm
 echo 'Создаем директории'
 
 pacman -S xdg-user-dirs --noconfirm
 
-echo ' Ставим Terminator dolphin gpm'
+echo ' Ставим Konsole dolphin gpm'
 
-pacman -S terminator dolphin gpm kate --noconfirm
+pacman -S konsole dolphin gpm kate --noconfirm
 
 echo 'Ставим шрифты'
 
