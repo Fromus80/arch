@@ -70,7 +70,7 @@ echo 'Создаем директории'
 
 pacman -S xdg-user-dirs --noconfirm
 
-echo ' Ставим Konsole dolphin gpm'
+echo ' Ставим Terminator dolphin gpm'
 
 pacman -S terminator dolphin gpm kate --noconfirm
 
