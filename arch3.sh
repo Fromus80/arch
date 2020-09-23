@@ -23,7 +23,7 @@ sleep 10
 sudo pacman -S gwenview okular kcalc --noconfirm
 sleep 10
 echo ' Ставим Steam   '
-sudo pacman -S steam --noconfirm
+sudo pacman -S steam grub-customizer --noconfirm
 sleep 10
 echo 'Ставим neofetch screenfetch'
 sleep 10
