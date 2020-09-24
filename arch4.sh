@@ -9,7 +9,7 @@ sudo pacman -S file-roller p7zip unace lrzip unzip unrar lha ark --noconfirm
 
 echo ' Ставим подключение Android к ПК через USB? '
 
-sudo pacman -S gvfs-mtp --noconfirm
+sudo pacman -S gvfs-mtp conky --noconfirm
 
 echo ' htop--диспетчер задач для linux  '
 
