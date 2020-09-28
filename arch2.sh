@@ -95,8 +95,10 @@ echo 'Подключаем автозагрузку менеджера вход�
 
 systemctl enable NetworkManager gpm
 
+
+timedatectl
+timedatectl set-local-rtc 1 --adjust-system-clock
+timedatectl
 echo 'Установка завершена! Перезагрузите систему.'
-
-
 exit
 
