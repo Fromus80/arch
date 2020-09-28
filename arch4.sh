@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -Syu
+sudo pacman -Syy
 
 sudo pacman -S exfat-utils ntfs-3g capitaine-cursors --noconfirm
 echo ' Ставим рограммы для работы с архивами'
@@ -19,8 +19,8 @@ echo ' gwenview - программа для просмотра изображе�
 
 sudo pacman -S gwenview okular kcalc --noconfirm
 
-echo ' Ставим Steam   '
-sudo pacman -S steam grub-customizer --noconfirm
+echo ' Ставим grub-customizer   '
+sudo pacman -S grub-customizer --noconfirm
 
 echo 'Ставим neofetch screenfetch'
 
