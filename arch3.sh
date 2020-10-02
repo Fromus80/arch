@@ -4,6 +4,9 @@ yay -S google-chrome --noconfirm
 sudo pacman -S zsh --noconfirm
 chsh -s /bin/zsh
 zsh
+echo 'Ставим Видео драйвер'
+
+pacman -S nvidia nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader--noconfirm
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
