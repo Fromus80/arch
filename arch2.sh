@@ -82,10 +82,6 @@ echo 'Ставим звук'
 
 pacman -S alsa-utils pulseaudio-equalizer-ladspa --noconfirm
 
-echo 'Ставим Видео драйвер'
-
-pacman -S nvidia nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader--noconfirm
-
 echo 'Ставим сеть и торрент'
 
 pacman -S networkmanager network-manager-applet ppp wget qbittorrent --noconfirm
