@@ -2,8 +2,9 @@
 wget git.io/yay-install.sh && sh yay-install.sh --noconfirm
 yay -S google-chrome --noconfirm
 sudo pacman -S zsh --noconfirm
-chsh -s /bin/zsh
+
 zsh
+chsh -s /bin/zsh
 echo 'Ставим Видео драйвер'
 timedatectl
 timedatectl set-local-rtc 1 --adjust-system-clock
