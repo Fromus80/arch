@@ -40,7 +40,7 @@ sudo pacman -S telegram-desktop oxygen-icons --noconfirm
 
 echo 'Ставим программы для создания скриншотов'
 
-sudo pacman -S spectacle flameshot --noconfirm
+sudo pacman -S flameshot --noconfirm
 echo 'Ставим лого ArchLinux в меню'
 wget git.io/arch_logo.png
 sudo mv -f ~/arch_logo.png /usr/share/pixmaps/arch_logo.png
@@ -52,7 +52,7 @@ yay -S xorg-xkill --noconfirm
 yay -S ttf-symbola --noconfirm
 yay -S ttf-clear-sans --noconfirm
 yay -S x-arc-shadow --noconfirm
-yay -S papirus-maia-icon-theme-git --noconfirm
+#yay -S papirus-maia-icon-theme-git --noconfirm
 yay -S breeze-default-cursor-theme --noconfirm
 
 exit
