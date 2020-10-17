@@ -22,6 +22,13 @@ yay -S lutris --noconfirm
 wget git.io/conky.tar.gz
 tar -xzf conky.tar.gz -C ~/
 
+echo 'Ставим шрифты'
+
+pacman -S ttf-arphic-ukai git ttf-liberation ttf-dejavu ttf-arphic-uming ttf-fireflysung ttf-sazanami --noconfirm
+
+echo 'Ставим звук'
+
+pacman -S alsa-utils pulseaudio-equalizer-ladspa --noconfirm
 
 
 
