@@ -54,42 +54,35 @@ pacman -Syy
 pacman -Syu
 
 echo 'Ставим иксы и драйвера'
-pacman -S xorg-server xorg-drivers xorg-xinit amd-ucode --noconfirm
+pacman -S xorg xorg-server xorg-drivers xorg-xinit amd-ucode --noconfirm
 
 echo "Ставим PLASMA KDE"
 
 pacman -S plasma --noconfirm
 
-pacman -Rs bluedevil discover --noconfirm
+pacman -Rs bluedevil discover ksshaskpass kwallet-pam plasma-sdk plasma-thunderbolt --noconfirm
 
 echo 'Cтавим DM'
 
-pacman -S sddm sddm-kcm grub-customizer --noconfirm
-systemctl enable sddm
+pacman -S sddm sddm-kcm --noconfirm
+
 echo 'Создаем директории'
 
 pacman -S xdg-user-dirs --noconfirm
 
-echo ' Ставим Konsole dolphin gpm'
+echo ' Ставим Konsole dolphin gpm kate'
 
-pacman -S konsole dolphin gpm kate --noconfirm
+pacman -S terminator dolphin gpm kate --noconfirm
 
-echo 'Ставим шрифты'
 
-pacman -S ttf-arphic-ukai git ttf-liberation ttf-dejavu ttf-arphic-uming ttf-fireflysung ttf-sazanami --noconfirm
+echo 'Ставим сеть'
 
-echo 'Ставим звук'
-
-pacman -S alsa-utils pulseaudio-equalizer-ladspa --noconfirm
-
-echo 'Ставим сеть и торрент'
-
-pacman -S networkmanager network-manager-applet ppp wget qbittorrent --noconfirm
+pacman -S networkmanager network-manager-applet ppp wget  --noconfirm
 
 
 echo 'Подключаем автозагрузку менеджера входа и интернет'
 
-systemctl enable NetworkManager gpm
+systemctl enable NetworkManager gpm sddm
 
 
 
