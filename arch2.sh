@@ -60,7 +60,7 @@ echo "Ставим PLASMA KDE"
 
 pacman -S plasma --noconfirm
 
-pacman -Rs bluedevil discover ksshaskpass kwallet-pam plasma-sdk plasma-thunderbolt --noconfirm
+pacman -Rs bluedevil discover ksshaskpass plasma-sdk plasma-thunderbolt --noconfirm
 
 echo 'Cтавим DM'
 
