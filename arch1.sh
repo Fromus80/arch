@@ -11,6 +11,7 @@ sleep 10
 echo 'Ваша разметка диска'
 sleep 10
 fdisk -l
+lsblk
 sleep 10
 echo '2.4.2 Форматирование дисков'
 sleep 10
@@ -25,7 +26,7 @@ mkdir -p /mnt/boot/efi
 mount /dev/sdd1 /mnt/boot/efi
 mount /dev/sdd3 /mnt/home
 
-
+lsblk
 echo '3.2 Установка основных пакетов'
 sleep 10
 pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd netctl wget
