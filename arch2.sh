@@ -72,7 +72,7 @@ pacman -S xdg-user-dirs --noconfirm
 
 echo ' Ставим Konsole dolphin gpm kate'
 
-pacman -S terminator konsole dolphin gpm kate --noconfirm
+pacman -S konsole dolphin gpm kate --noconfirm
 
 
 echo 'Ставим сеть'
