@@ -4,10 +4,7 @@ yay -S conky-manager2 conky-cairo autojump --noconfirm
 yay -S crossover --noconfirm
 wget git.io/conky.tar.gz
 tar -xzf conky.tar.gz -C ~/
-sudo pacman -S zsh --noconfirm
 
-zsh
-chsh -s /bin/zsh
 echo 'Ставим Видео драйвер'
 timedatectl
 timedatectl set-local-rtc 1 --adjust-system-clock
@@ -87,5 +84,14 @@ yay -S ttf-clear-sans --noconfirm
 #yay -S x-arc-shadow --noconfirm
 #yay -S papirus-maia-icon-theme-git --noconfirm
 #yay -S breeze-default-cursor-theme --noconfirm
+sudo pacman -S zsh --noconfirm
+
+zsh
+chsh -s /bin/zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 exit
