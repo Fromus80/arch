@@ -1,5 +1,9 @@
 #!/bin/bash
 yay -S google-chrome --noconfirm
+yay -S conky-manager2 conky-cairo autojump --noconfirm
+yay -S crossover --noconfirm
+wget git.io/conky.tar.gz
+tar -xzf conky.tar.gz -C ~/
 sudo pacman -S zsh --noconfirm
 
 zsh
@@ -17,10 +21,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-yay -S conky-manager2 conky-cairo autojump --noconfirm
-yay -S crossover --noconfirm
-wget git.io/conky.tar.gz
-tar -xzf conky.tar.gz -C ~/
+
 
 echo 'Ставим шрифты'
 
@@ -68,7 +69,7 @@ sudo pacman -S gparted --noconfirm
 
 echo 'Ставим telegram - мессенджер'
 
-sudo pacman -S telegram-desktop oxygen-icons --noconfirm
+sudo pacman -S telegram-desktop --noconfirm
 
 echo 'Ставим программы для создания скриншотов'
 
@@ -83,8 +84,8 @@ yay -S hunspell-ru --noconfirm
 yay -S xorg-xkill --noconfirm
 yay -S ttf-symbola --noconfirm
 yay -S ttf-clear-sans --noconfirm
-yay -S x-arc-shadow --noconfirm
+#yay -S x-arc-shadow --noconfirm
 #yay -S papirus-maia-icon-theme-git --noconfirm
-yay -S breeze-default-cursor-theme --noconfirm
+#yay -S breeze-default-cursor-theme --noconfirm
 
 exit
