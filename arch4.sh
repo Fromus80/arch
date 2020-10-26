@@ -1,3 +1,4 @@
+#!/bin/bash
 
 yay -S google-chrome --noconfirm
 yay -S conky-manager2 conky-cairo autojump --noconfirm
