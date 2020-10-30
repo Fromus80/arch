@@ -73,7 +73,7 @@ echo 'Ставим reflector'
 sudo pacman -S reflector --noconfirm
 yay -S hunspell-ru --noconfirm
 yay -S xorg-xkill --noconfirm
-yay -S ttf-symbola --noconfirm
+yay -S ttf-symbola ttf-weather-icons --noconfirm
 yay -S ttf-clear-sans --noconfirm
 #yay -S x-arc-shadow --noconfirm
 #yay -S papirus-maia-icon-theme-git --noconfirm
