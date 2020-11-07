@@ -2,6 +2,7 @@
 
 yay -S google-chrome --noconfirm
 yay -S conky-manager2 conky-cairo autojump --noconfirm
+sudo pacman -S file-roller p7zip unace lrzip unzip unrar lha ark --noconfirm
 yay -S crossover --noconfirm
 wget git.io/conky.tar.gz
 tar -xzf conky.tar.gz -C ~/
@@ -28,8 +29,6 @@ sudo pacman -Syy
 
 sudo pacman -S exfat-utils ntfs-3g --noconfirm
 echo ' Ставим рограммы для работы с архивами'
-
-sudo pacman -S file-roller p7zip unace lrzip unzip unrar lha ark --noconfirm
 
 echo ' Ставим подключение Android к ПК через USB? '
 
