@@ -16,17 +16,17 @@ sudo pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulka
 
 echo 'Ставим шрифты'
 
-pacman -S ttf-arphic-ukai git ttf-liberation ttf-dejavu ttf-arphic-uming ttf-fireflysung ttf-sazanami --noconfirm
+sudo pacman -S ttf-arphic-ukai git ttf-liberation ttf-dejavu ttf-arphic-uming ttf-fireflysung ttf-sazanami --noconfirm
 
 echo 'Ставим звук'
 
-pacman -S alsa-utils pulseaudio-equalizer-ladspa --noconfirm
+sudo pacman -S alsa-utils pulseaudio-equalizer-ladspa pavucontrol paprefs plasma-pa kmix --noconfirm
 
 
 
 sudo pacman -Syy
 
-sudo pacman -S exfat-utils ntfs-3g capitaine-cursors --noconfirm
+sudo pacman -S exfat-utils ntfs-3g --noconfirm
 echo ' Ставим рограммы для работы с архивами'
 
 sudo pacman -S file-roller p7zip unace lrzip unzip unrar lha ark --noconfirm
