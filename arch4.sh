@@ -27,15 +27,6 @@ sudo pacman -Syy
 
 sudo pacman -S exfat-utils ntfs-3g --noconfirm
 echo ' Ставим рограммы для работы с архивами'
-
-echo ' Ставим подключение Android к ПК через USB? '
-
-sudo pacman -S gvfs-mtp --noconfirm
-
-echo ' htop--диспетчер задач для linux  '
-
-sudo pacman -S htop --noconfirm
-
 echo ' gwenview - программа для просмотра изображений и PDF, калькулятор'
 
 sudo pacman -S gwenview okular kcalc --noconfirm
@@ -51,10 +42,6 @@ echo 'Ставим VLC'
 
 sudo pacman -S vlc --noconfirm
 
-echo 'Ставим gparted - программу для работы с разделами sdd/hdd'
-
-sudo pacman -S gparted --noconfirm
-
 echo 'Ставим telegram - мессенджер'
 
 sudo pacman -S telegram-desktop --noconfirm
@@ -65,17 +52,24 @@ sudo pacman -S flameshot --noconfirm
 echo 'Ставим лого ArchLinux в меню'
 wget git.io/arch_logo.png
 sudo mv -f ~/arch_logo.png /usr/share/pixmaps/arch_logo.png
-yay -S woeusb alsi inxi --noconfirm
+
+yay -S woeusb alsi inxi hunspell-ru xorg-xkill ttf-symbola ttf-weather-icons ttf-clear-sans --noconfirm
+
+
+echo ' Ставим подключение Android к ПК через USB? '
+
+sudo pacman -S gvfs-mtp --noconfirm
+
+echo ' htop--диспетчер задач для linux  '
+
+sudo pacman -S htop --noconfirm
+
+echo 'Ставим gparted - программу для работы с разделами sdd/hdd'
+
+sudo pacman -S gparted --noconfirm
+
+
 echo 'Ставим reflector'
 sudo pacman -S reflector --noconfirm
-yay -S hunspell-ru --noconfirm
-yay -S xorg-xkill --noconfirm
-yay -S ttf-symbola ttf-weather-icons --noconfirm
-yay -S ttf-clear-sans --noconfirm
-#yay -S x-arc-shadow --noconfirm
-#yay -S papirus-maia-icon-theme-git --noconfirm
-#yay -S breeze-default-cursor-theme --noconfirm
-
-
 
 exit
