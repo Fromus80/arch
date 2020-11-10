@@ -1,6 +1,4 @@
 #!/bin/bash
-
-yay -S google-chrome --noconfirm
 yay -S conky-manager2 conky-cairo autojump --noconfirm
 sudo pacman -S file-roller p7zip unace lrzip unzip unrar lha ark --noconfirm
 yay -S crossover --noconfirm
