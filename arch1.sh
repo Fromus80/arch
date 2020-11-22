@@ -1,5 +1,4 @@
 #!/bin/bash
-pacman-key --refresh-keys 
 loadkeys ru
 setfont cyr-sun16
 echo '2.3 Синхронизация системных часов'
