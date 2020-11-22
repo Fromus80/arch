@@ -1,5 +1,5 @@
 #!/bin/bash
-
+pacman-key --refresh-keys 
 loadkeys ru
 setfont cyr-sun16
 echo '2.3 Синхронизация системных часов'
@@ -28,8 +28,6 @@ mount /dev/sdd3 /mnt/home
 lsblk
 echo '3.2 Установка основных пакетов'
 sleep 10
-pacman-key --init
-pacman-key --refresh-keys
 pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd netctl
 
 echo '3.3 Настройка системы'
