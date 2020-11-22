@@ -28,6 +28,8 @@ mount /dev/sdd3 /mnt/home
 lsblk
 echo '3.2 Установка основных пакетов'
 sleep 10
+pacman-key --init
+pacman-key --refresh-keys
 pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd netctl
 
 echo '3.3 Настройка системы'
