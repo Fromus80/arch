@@ -32,7 +32,7 @@ echo ' gwenview - программа для просмотра изображе�
 sudo pacman -S gwenview okular kcalc baobab --noconfirm
 
 echo ' Ставим grub-customizer   '
-sudo pacman -S grub-customizer --noconfirm
+sudo pacman -S grub-customizer qbittorrent --noconfirm
 
 echo 'Ставим neofetch screenfetch'
 
