@@ -29,7 +29,7 @@ sudo pacman -S exfat-utils ntfs-3g --noconfirm
 echo ' Ставим рограммы для работы с архивами'
 echo ' gwenview - программа для просмотра изображений и PDF, калькулятор'
 
-sudo pacman -S gwenview okular kcalc baobab --noconfirm
+sudo pacman -S gwenview okular kcalc baobab bpytop --noconfirm
 
 echo ' Ставим grub-customizer   '
 sudo pacman -S grub-customizer qbittorrent --noconfirm
