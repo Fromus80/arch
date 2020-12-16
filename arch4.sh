@@ -48,7 +48,7 @@ sudo pacman -S telegram-desktop --noconfirm
 
 echo 'Ставим программы для создания скриншотов'
 
-sudo pacman -S flameshot --noconfirm
+sudo pacman -S flameshot gvfs-mtp htop gparted reflector telegram-desktop vlc --noconfirm
 echo 'Ставим лого ArchLinux в меню'
 wget git.io/arch_logo.png
 sudo mv -f ~/arch_logo.png /usr/share/pixmaps/arch_logo.png
@@ -56,20 +56,6 @@ sudo mv -f ~/arch_logo.png /usr/share/pixmaps/arch_logo.png
 yay -S woeusb alsi inxi hunspell-ru xorg-xkill ttf-symbola ttf-weather-icons ttf-clear-sans pamac-aur --noconfirm
 
 
-echo ' Ставим подключение Android к ПК через USB? '
 
-sudo pacman -S gvfs-mtp --noconfirm
-
-echo ' htop--диспетчер задач для linux  '
-
-sudo pacman -S htop --noconfirm
-
-echo 'Ставим gparted - программу для работы с разделами sdd/hdd'
-
-sudo pacman -S gparted --noconfirm
-
-
-echo 'Ставим reflector'
-sudo pacman -S reflector --noconfirm
 
 exit
