@@ -89,7 +89,7 @@ systemctl enable NetworkManager gpm sddm
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-
+yay -S google-chrome --noconfirm
 echo 'Установка завершена! Перезагрузите систему.'
 exit
 
