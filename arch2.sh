@@ -27,7 +27,7 @@ mkinitcpio -p linux
 echo '3.5 Устанавливаем загрузчик'
 
 pacman -Syy
-pacman -S grub efibootmgr os-prober mtools fuse --noconfirm
+pacman -S grub efibootmgr os-prober mtools fuse git --noconfirm
 grub-install /dev/sdd
 
 echo 'Обновляем grub.cfg'
@@ -85,7 +85,10 @@ echo 'Подключаем автозагрузку менеджера вход�
 
 systemctl enable NetworkManager gpm sddm
 
-
+# Install Yay
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 echo 'Установка завершена! Перезагрузите систему.'
 exit
