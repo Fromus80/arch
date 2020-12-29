@@ -85,11 +85,6 @@ echo 'Подключаем автозагрузку менеджера вход�
 
 systemctl enable NetworkManager gpm sddm
 
-# Install Yay
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-yay -S google-chrome --noconfirm
 echo 'Установка завершена! Перезагрузите систему.'
 exit
 
