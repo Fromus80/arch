@@ -13,16 +13,16 @@ lsblk
 
 echo '2.4.2 Форматирование дисков'
 
-mkfs.fat -F32 /dev/sdd1
-mkfs.ext4  /dev/sdd2
-mkfs.ext4  /dev/sdd3
+mkfs.fat -F32 /dev/sde1
+mkfs.ext4  /dev/sde2
+mkfs.ext4  /dev/sde3
 
 echo '2.4.3 Монтирование дисков'
-mount /dev/sdd2 /mnt
+mount /dev/sde2 /mnt
 mkdir /mnt/{home,boot}
 mkdir -p /mnt/boot/efi
-mount /dev/sdd1 /mnt/boot/efi
-mount /dev/sdd3 /mnt/home
+mount /dev/sde1 /mnt/boot/efi
+mount /dev/sde3 /mnt/home
 
 lsblk
 echo '3.2 Установка основных пакетов'
