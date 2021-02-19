@@ -1,7 +1,7 @@
 #!/bin/bash
 yay -S conky-manager2 conky-cairo autojump --noconfirm
 sudo pacman -S file-roller p7zip unace lrzip unzip unrar lha ark --noconfirm
-yay -S crossover --noconfirm
+yay -S google-chrome --noconfirm
 wget git.io/conky.tar.gz
 tar -xzf conky.tar.gz -C ~/
 
