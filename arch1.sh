@@ -7,7 +7,7 @@ timedatectl set-ntp true
 
 
 echo 'Ваша разметка диска'
-
+cfdisk /dev/sde
 fdisk -l
 lsblk
 
