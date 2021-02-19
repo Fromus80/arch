@@ -55,7 +55,7 @@ pacman -Syy
 pacman -Syu
 
 echo 'Ставим иксы и драйвера'
-pacman -S xorg xorg-server xorg-drivers xorg-xinit amd-ucode --noconfirm
+pacman -S xorg xorg-server xorg-drivers xorg-xinit --noconfirm
 
 echo "Ставим PLASMA KDE"
 
