@@ -22,13 +22,13 @@ echo 'KEYMAP=ru' >> /etc/vconsole.conf
 echo 'FONT=cyr-sun16' >> /etc/vconsole.conf
 
 echo 'Создадим загрузочный RAM диск'
-mkinitcpio -p linux-lts
+mkinitcpio -p linux
 
 echo '3.5 Устанавливаем загрузчик'
 
 pacman -Syy
 pacman -S grub efibootmgr os-prober mtools fuse git --noconfirm
-grub-install /dev/sdd
+grub-install /dev/sde
 
 echo 'Обновляем grub.cfg'
 
