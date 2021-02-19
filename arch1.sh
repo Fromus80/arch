@@ -27,7 +27,7 @@ mount /dev/sdd3 /mnt/home
 lsblk
 echo '3.2 Установка основных пакетов'
 sleep 10
-pacstrap /mnt base base-devel linux-lts linux-firmware nano dhcpcd netctl wget
+pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd netctl wget amd-ucode 
 
 echo '3.3 Настройка системы'
 
