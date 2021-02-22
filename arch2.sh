@@ -28,7 +28,7 @@ echo '3.5 Устанавливаем загрузчик'
 
 pacman -Syy
 pacman -S grub efibootmgr os-prober mtools fuse git --noconfirm
-grub-install /dev/sde
+grub-install /dev/sdb
 
 echo 'Обновляем grub.cfg'
 
