@@ -7,22 +7,22 @@ timedatectl set-ntp true
 
 
 echo 'Ваша разметка диска'
-cfdisk /dev/sde
+cfdisk /dev/sdb
 fdisk -l
 lsblk
 
 echo '2.4.2 Форматирование дисков'
 
-mkfs.fat -F32 /dev/sde1
-mkfs.ext4  /dev/sde2
-mkfs.ext4  /dev/sde3
+mkfs.fat -F32 /dev/sdb1
+mkfs.ext4  /dev/sdb2
+mkfs.ext4  /dev/sdb3
 
 echo '2.4.3 Монтирование дисков'
-mount /dev/sde2 /mnt
+mount /dev/sdb2 /mnt
 mkdir /mnt/{home,boot}
 mkdir -p /mnt/boot/efi
-mount /dev/sde1 /mnt/boot/efi
-mount /dev/sde3 /mnt/home
+mount /dev/sdb1 /mnt/boot/efi
+mount /dev/sdb3 /mnt/home
 
 lsblk
 echo '3.2 Установка основных пакетов'
