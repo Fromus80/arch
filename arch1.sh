@@ -14,15 +14,17 @@ lsblk
 echo '2.4.2 Форматирование дисков'
 
 mkfs.fat -F32 /dev/sdb1
-mkfs.ext4  /dev/sdb2
+mkswap /dev/sdb2
 mkfs.ext4  /dev/sdb3
+mkfs.ext4  /dev/sdb4
 
 echo '2.4.3 Монтирование дисков'
-mount /dev/sdb2 /mnt
+mount /dev/sdb3 /mnt
 mkdir /mnt/{home,boot}
 mkdir -p /mnt/boot/efi
 mount /dev/sdb1 /mnt/boot/efi
-mount /dev/sdb3 /mnt/home
+swapon /dev/sdb2
+mount /dev/sdb4 /mnt/home
 
 lsblk
 echo '3.2 Установка основных пакетов'
