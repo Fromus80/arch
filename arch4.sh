@@ -19,7 +19,7 @@ sudo pacman -S ttf-arphic-ukai git ttf-liberation ttf-dejavu ttf-arphic-uming tt
 
 echo 'Ставим звук'
 
-sudo pacman -S alsa-utils pulseaudio-equalizer-ladspa pavucontrol paprefs plasma-pa kmix --noconfirm
+sudo pacman -S alsa-utils pulseaudio-equalizer-ladspa pavucontrol paprefs plasma-pa --noconfirm
 
 
 
