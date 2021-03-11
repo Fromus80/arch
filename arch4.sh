@@ -10,7 +10,8 @@ timedatectl
 timedatectl set-local-rtc 1 --adjust-system-clock
 timedatectl
 
-sudo pacman -S nvidia nvidia-settings opencl-nvidia lib32-opencl-nvidia lib32-nvidia-utils --noconfirm
+sudo pacman -S nvidia nvidia-settings opencl-nvidia lib32-opencl-nvidia lib32-nvidia-utils nvidia-utils  vulkan-icd-loader lib32-vulkan-icd-loader --noconfirm
+
 
 
 echo 'Ставим шрифты'
