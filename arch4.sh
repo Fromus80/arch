@@ -54,7 +54,7 @@ echo 'Ставим лого ArchLinux в меню'
 wget git.io/arch_logo.png
 sudo mv -f ~/arch_logo.png /usr/share/pixmaps/arch_logo.png
 
-yay -S woeusb alsi inxi hunspell-ru xorg-xkill ttf-symbola ttf-weather-icons ttf-clear-sans pamac-aur --noconfirm
+yay -S woeusb alsi inxi hunspell-ru xorg-xkill ttf-symbola ttf-weather-icons ttf-clear-sans pamac-aur cozy-audiobooks --noconfirm
 
 
 
