@@ -59,9 +59,9 @@ pacman -S xorg xorg-server xorg-drivers xorg-xinit --noconfirm
 
 echo "Ставим PLASMA KDE"
 
-pacman -S plasma
+pacman -S plasma --noconfirm
 
-#pacman -Rs bluedevil discover ksshaskpass plasma-sdk plasma-thunderbolt --noconfirm
+pacman -Rs bluedevil discover ksshaskpass plasma-sdk plasma-thunderbolt --noconfirm
 
 echo 'Cтавим DM'
 
