@@ -59,9 +59,9 @@ pacman -S xorg xorg-server xorg-drivers xorg-xinit --noconfirm
 
 echo "Ставим PLASMA KDE"
 
-pacman -S plasma --noconfirm
+pacman -S plasma konsole dolphin gpm kate --noconfirm
 
-pacman -Rs bluedevil discover ksshaskpass plasma-sdk plasma-thunderbolt --noconfirm
+#pacman -Rs bluedevil discover ksshaskpass plasma-sdk plasma-thunderbolt --noconfirm
 
 echo 'Cтавим DM'
 
@@ -73,7 +73,7 @@ pacman -S xdg-user-dirs --noconfirm
 
 echo ' Ставим Konsole dolphin gpm kate'
 
-pacman -S konsole dolphin gpm kate --noconfirm
+#pacman -S konsole dolphin gpm kate --noconfirm
 
 
 echo 'Ставим сеть'
